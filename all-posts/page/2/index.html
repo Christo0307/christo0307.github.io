@@ -1,0 +1,798 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-tw" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Chris Lee">
+  <meta name="keywords" content="">
+  
+    <meta property="og:type" content="website">
+<meta property="og:title" content="Chris Lee">
+<meta property="og:url" content="https://christo0307.github.io/all-posts/page/2/index.html">
+<meta property="og:site_name" content="Chris Lee">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:author" content="Chris Lee">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>Chris Lee</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"christo0307.github.io","root":"/","version":"1.9.9","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":false,"expand_all":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"openkounter":{"server_url":"https://open-kounter.mintimate.cn","path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 8.1.1"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content (desktop) -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Kategorien</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>Über</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile grid menu overlay -->
+<div id="mobile-grid-menu" class="d-lg-none">
+  <div class="mobile-grid-menu-inner">
+    <div class="container">
+      <div class="row">
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/categories/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-category-fill"></i>
+                  <span>Kategorien</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/about/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>Über</span>
+                </div>
+              </a>
+            </div>
+          
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-search-btn">
+            <a href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-search"></i>
+                <span>Suchen</span>
+              </div>
+            </a>
+          </div>
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-color-toggle-btn"
+               data-label-light="Hell"
+               data-label-dark="Dunkel">
+            <a href="javascript:;" aria-label="Color Toggle">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-dark" id="mobile-color-toggle-icon"></i>
+                <span id="mobile-color-toggle-label">Dunkel</span>
+              </div>
+            </a>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="An elegant Material-Design theme for Hexo"></span>
+          
+        </div>
+
+        
+      </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-x-md">
+        <div id="board"
+          style="margin-top: 0">
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+<h1 style="display: none">Chris Lee</h1>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/Deutsch/Grammatik/%E9%80%A3%E8%A9%9E%E3%80%81%E8%A4%87%E5%90%88%E5%8F%A5%E3%80%81%E4%B8%A6%E5%88%97%E9%80%A3%E8%A9%9E%EF%BC%8C%E9%80%A3%E6%8E%A5%E5%89%AF%E8%A9%9E/" target="_self">
+          
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/Deutsch/Grammatik/%E9%80%A3%E8%A9%9E%E3%80%81%E8%A4%87%E5%90%88%E5%8F%A5%E3%80%81%E4%B8%A6%E5%88%97%E9%80%A3%E8%A9%9E%EF%BC%8C%E9%80%A3%E6%8E%A5%E5%89%AF%E8%A9%9E/" target="_self">
+        <div>
+          連詞、複合句、並列連詞，連接副詞一、複合句 (Satzgefüge)1. 並列句複合句由兩個以上意思完整的獨立子句所組成；兩個子句則透過並列連詞（對等連接詞）連接或是省略。 2. 主從句由一完整句子的獨立子句搭配一個以上從屬子句組成的句子。從屬子句以從屬連接詞開頭。從屬子句無法單獨使用，因為它是用來修飾獨立子句或是補充資訊。 二、連詞德語的「連詞」可以依照 功能與語序影響 分成三大類（嚴格來說是兩
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-04-22 10:32" pubdate>
+              2026-04-22
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/Deutsch/Grammatik/%E6%88%91%E5%96%9C%E6%AD%A1%E4%BD%A0/" target="_self">
+          
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/Deutsch/Grammatik/%E6%88%91%E5%96%9C%E6%AD%A1%E4%BD%A0/" target="_self">
+        <div>
+          我喜歡你 在德語中，我喜歡你有很多種說法 很多人都是看到我的照片，就對我說： Du gefällst mir. 原來在口語中，gefallen，也可以用來表示我喜歡你 這是因為在德國的文化中，Ich liebe dich.（我愛你）是不能隨便說說的。 所以很多都是說「你的外型很吸引我」，來表達我喜歡你。 一、1. Ich liebe … (原形lieben)表達深層情感的愛 Ich liebe G
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-04-22 10:32" pubdate>
+              2026-04-22
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/Deutsch/Grammatik/%E5%B8%B6zu%E4%B8%8D%E5%AE%9A%E5%BC%8F/" target="_self">
+          
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/Deutsch/Grammatik/%E5%B8%B6zu%E4%B8%8D%E5%AE%9A%E5%BC%8F/" target="_self">
+        <div>
+          帶zu不定式不定式(Infinitiv)，就是動詞的原形 zu gehen, zu warten, zu klingeln, den Text verstehen, dir Mathe zu helfen 上面的例子都沒有主詞，動詞不需跟著主詞變位 帶zu不定式可作為簡化的表達方式 當我們從句的主語不重要時，無須說明主語，就可以使用帶zu不定式 一、不定式的時態無助動詞時，動詞用原形den Tex
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-04-22 10:32" pubdate>
+              2026-04-22
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/Deutsch/Grammatik/%E5%8E%9F%E5%9B%A0%E3%80%81%E7%B5%90%E6%9E%9C%E3%80%81%E7%9B%AE%E7%9A%84%E5%92%8C%E8%AE%93%E6%AD%A5%E7%8A%B6%E8%AF%AD/" target="_self">
+          
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/Deutsch/Grammatik/%E5%8E%9F%E5%9B%A0%E3%80%81%E7%B5%90%E6%9E%9C%E3%80%81%E7%9B%AE%E7%9A%84%E5%92%8C%E8%AE%93%E6%AD%A5%E7%8A%B6%E8%AF%AD/" target="_self">
+        <div>
+          什麼是狀語；原因、結果、目的和讓步狀語一、什麼是狀語狀語 (Adverbial)狀語是句子裡用來 修飾整個動作或整句的成分，通常說明時間、地點、原因、方式、條件等等。 它可以是：  一個副詞  👉Ich gehe heute ins Kino.（我今天去電影院。）  一個介詞片語  👉Ich gehe mit meinen Freunden ins Kino.（我和朋友去電影院。）  甚至是一
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-04-22 10:32" pubdate>
+              2026-04-22
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/Deutsch/Grammatik/%E4%BB%80%E9%BA%BC%E6%98%AF%E5%BE%9E%E5%8F%A5%EF%BC%9F%E4%BB%80%E9%BA%BC%E6%98%AF%E7%8B%80%E8%AA%9E%E5%BE%9E%E5%8F%A5%EF%BC%9F/" target="_self">
+          
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/Deutsch/Grammatik/%E4%BB%80%E9%BA%BC%E6%98%AF%E5%BE%9E%E5%8F%A5%EF%BC%9F%E4%BB%80%E9%BA%BC%E6%98%AF%E7%8B%80%E8%AA%9E%E5%BE%9E%E5%8F%A5%EF%BC%9F/" target="_self">
+        <div>
+          什麼是從句？什麼是狀語從句？從句是不能單獨成句的句子成分，它通常是主句的一部分，但本身也有主詞和動詞。 從句 (Nebensatz)│├── 名詞性從句 (Nominalsatz) - 當主詞&#x2F;受詞│     例：Ich weiß, dass er kommt.│├── 形容詞從句（關係從句）(Relativsatz) - 修飾名詞│     例：Das ist der Mann, de
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-04-22 10:32" pubdate>
+              2026-04-22
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/Deutsch/Grammatik/wenn,%20als,%20ob%E5%92%8Cwann%E5%BC%95%E5%B0%8E%E7%9A%84%E5%BE%9E%E5%8F%A5/" target="_self">
+          
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/Deutsch/Grammatik/wenn,%20als,%20ob%E5%92%8Cwann%E5%BC%95%E5%B0%8E%E7%9A%84%E5%BE%9E%E5%8F%A5/" target="_self">
+        <div>
+          wenn, als, ob和wann引導的從句德語中的wenn、als、wann和ob可以被用來引導時間狀語從句、條件狀語從句和名詞性從句。我們以後講的所有從句，都和我們講過的dass引導的名詞性從句一樣，需要遵守尾語序。 複習從句的規則  從句的變位動詞要放在句末  從句可放在主句的前面或後面。如果從句在前主句在後，主句要使用反語序（動詞在主祠前）Wenn_______, V. ______.
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-04-22 10:32" pubdate>
+              2026-04-22
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/Deutsch/Grammatik/dass%E5%BE%9E%E5%8F%A5/" target="_self">
+          
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/Deutsch/Grammatik/dass%E5%BE%9E%E5%8F%A5/" target="_self">
+        <div>
+          Ich glaube, die Miete hier ist zu hoch.我覺得，這裡租金太高了 Ich danke, morgen kommt er vielleicht nicht.我想，他明天不會來了 以上這兩句，都可以改成今天要新教的：dass從句 dass從句針對主句補述內容，不能單獨存在。類似英語的that子句 一、從句的規則1. 從句的變位動詞要放在句末2. 從句可放在主句的前面
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-04-22 10:32" pubdate>
+              2026-04-22
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/MCU/Arduino/Arduino-DFPlayer-Mini/" target="_self">
+          Arduino-DFPlayer-Mini
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/MCU/Arduino/Arduino-DFPlayer-Mini/" target="_self">
+        <div>
+          Arduino-DFPlayer-Mini接線方式：VCC &#x3D;&gt; 5VGND &#x3D;&gt; GNDRX &#x3D;&gt; Pin 10 (加1K電阻)TX &#x3D;&gt; Pin 11SPK1,SPK2 &#x3D;&gt; 分別接喇叭單體的兩條線，沒有序順限制 https://blog.jmaker.com.tw/arduino-dfplayer-mp3/
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-02-23 05:59" pubdate>
+              2026-02-23
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/MCU-Arduino/" class="category-chain-item">MCU &amp; Arduino</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/MCU-Arduino/Arduino/" class="category-chain-item">Arduino</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/MCU-Arduino/Arduino/DFPlayer-Mini/" class="category-chain-item">DFPlayer-Mini</a>
+  
+  
+
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/MCU/Arduino/Arduino-LCD12864/" target="_self">
+          Arduino-LCD12864
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/MCU/Arduino/Arduino-LCD12864/" target="_self">
+        <div>
+          12864 LCD 功能 Arduino PIC32MX    VSS 接地 GND GND   VDD 5V 5V 5V   V0 亮度調整 X X   RS CS片選 D8 RB0   R&#x2F;W MOSI D9 RB1   E Clock D3 RB14   DB0 並行bit0 X X   DB1 並行bit1 X X   DB2 並行bit2 X X   DB3 並行bi
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-02-23 05:51" pubdate>
+              2026-02-23
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/MCU-Arduino/" class="category-chain-item">MCU &amp; Arduino</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/MCU-Arduino/Arduino/" class="category-chain-item">Arduino</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/MCU-Arduino/Arduino/LCD12864/" class="category-chain-item">LCD12864</a>
+  
+  
+
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/Hexo-tutorial/hello-world/" target="_self">
+          建立新文章的步驟
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/Hexo-tutorial/hello-world/" target="_self">
+        <div>
+          建立新文章的步驟一、建立資料夾在source_posts資料夾下面，建立MCU\PIC\PIC18 變成C:\Users\Chris\HexoBlog\Blog\source_posts\MCU\PIC\PIC18 雖然fluid主題，文章的分類是依靠檔頭， 不過為了移植到別的主題方便（別的主題有些是用資料夾階層分類） 我規定，我的文章路徑要與分類一致。 二、建立新文章先切換目錄 1cd C:\U
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-01-28 14:47" pubdate>
+              2026-01-28
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Hexo%E6%95%99%E5%AD%B8/" class="category-chain-item">Hexo教學</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/all-posts/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/all-posts/">1</a><span class="page-number current">2</span><a class="page-number" href="/all-posts/page/3/#board">3</a><a class="extend next" rel="next" href="/all-posts/page/3/#board"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Suchen</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Stichwort</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog funktioniert am besten mit aktiviertem JavaScript</div>
+  </noscript>
+</body>
+</html>
