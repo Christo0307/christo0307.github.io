@@ -1,0 +1,17 @@
+.hexo-page[hidden]{
+    display:block !important;
+}
+
+.md-preview{
+    display:none !important;
+}
+
+.fake-link {
+  color: #1a0dab;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.fake-link:hover {
+  color: #551a8b;
+}

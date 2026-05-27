@@ -1,0 +1,694 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-tw" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Chris Lee">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="1. 什麼是雙極性接面電晶體（BJT）？BJT 是一個「用小電流控制大電流」的半導體元件。 為什麼叫「雙極性（Bipolar）」？因為它同時使用：電子（Electron）、電洞（Hole）這兩種載子導電。 這跟 MOSFET 不同。MOSFET 幾乎只靠單一載子 BJT 是雙載子，所以叫 Bipolar。 它的主要功能是什麼？放大器（Amplifier）： 把微弱的輸入訊號（如麥克風的聲音、感測器">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Chris Lee">
+<meta property="og:url" content="https://christo0307.github.io/Ele/BJT/index.html">
+<meta property="og:site_name" content="Chris Lee">
+<meta property="og:description" content="1. 什麼是雙極性接面電晶體（BJT）？BJT 是一個「用小電流控制大電流」的半導體元件。 為什麼叫「雙極性（Bipolar）」？因為它同時使用：電子（Electron）、電洞（Hole）這兩種載子導電。 這跟 MOSFET 不同。MOSFET 幾乎只靠單一載子 BJT 是雙載子，所以叫 Bipolar。 它的主要功能是什麼？放大器（Amplifier）： 把微弱的輸入訊號（如麥克風的聲音、感測器">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2026-05-16T16:04:00.157Z">
+<meta property="article:modified_time" content="2026-05-20T13:02:49.262Z">
+<meta property="article:author" content="Chris Lee">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>Chris Lee</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"christo0307.github.io","root":"/","version":"1.9.9","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":false,"expand_all":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"openkounter":{"server_url":"https://open-kounter.mintimate.cn","path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 8.1.1"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content (desktop) -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Kategorien</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>Über</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile grid menu overlay -->
+<div id="mobile-grid-menu" class="d-lg-none">
+  <div class="mobile-grid-menu-inner">
+    <div class="container">
+      <div class="row">
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/categories/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-category-fill"></i>
+                  <span>Kategorien</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/about/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>Über</span>
+                </div>
+              </a>
+            </div>
+          
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-search-btn">
+            <a href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-search"></i>
+                <span>Suchen</span>
+              </div>
+            </a>
+          </div>
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-color-toggle-btn"
+               data-label-light="Hell"
+               data-label-dark="Dunkel">
+            <a href="javascript:;" aria-label="Color Toggle">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-dark" id="mobile-color-toggle-icon"></i>
+                <span id="mobile-color-toggle-label">Dunkel</span>
+              </div>
+            </a>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text=""></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2026-05-17 00:04" pubdate>
+          2026年5月17日 凌晨
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.1k wörter
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          10 minuten
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar category-bar" style="margin-right: -1rem">
+    
+
+
+
+
+
+<div class="category-list">
+  
+  
+</div>
+
+
+  </aside>
+
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header"></h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="1-什麼是雙極性接面電晶體（BJT）？"><a href="#1-什麼是雙極性接面電晶體（BJT）？" class="headerlink" title="1. 什麼是雙極性接面電晶體（BJT）？"></a>1. 什麼是雙極性接面電晶體（BJT）？</h1><p>BJT 是一個「用小電流控制大電流」的半導體元件。</p>
+<h3 id="為什麼叫「雙極性（Bipolar）」？"><a href="#為什麼叫「雙極性（Bipolar）」？" class="headerlink" title="為什麼叫「雙極性（Bipolar）」？"></a>為什麼叫「雙極性（Bipolar）」？</h3><p>因為它同時使用：電子（Electron）、電洞（Hole）這兩種載子導電。</p>
+<p>這跟 MOSFET 不同。MOSFET 幾乎只靠單一載子</p>
+<p>BJT 是雙載子，所以叫 Bipolar。</p>
+<h3 id="它的主要功能是什麼？"><a href="#它的主要功能是什麼？" class="headerlink" title="它的主要功能是什麼？"></a>它的主要功能是什麼？</h3><p>放大器（Amplifier）： 把微弱的輸入訊號（如麥克風的聲音、感測器的訊號）放大成足夠強大的輸出訊號。我們前面計算的電路就是一種放大器應用。</p>
+<p>電子開關（Switch）： 利用微小的控制電流，來決定大電流的導通（ON）或截止（OFF），這是數位邏輯電路的基礎。</p>
+<h1 id="2-BJT-的基本構造"><a href="#2-BJT-的基本構造" class="headerlink" title="2. BJT 的基本構造"></a>2. BJT 的基本構造</h1><p>BJT 是由三層不同摻雜（Doping）濃度的半導體所「夾」出來的結構，這三層半導體之間會形成兩個 PN 接面（PN Junction）。</p>
+<p>根據這三層半導體的排列順序，BJT 可以分為兩大類：</p>
+<ul>
+<li><p>NPN 型（最常用，電子流動速度較快，效率較高）</p>
+</li>
+<li><p>PNP 型（特性與 NPN 相反）</p>
+</li>
+</ul>
+<h1 id="BJT-的三個端子（引腳），分別是："><a href="#BJT-的三個端子（引腳），分別是：" class="headerlink" title="BJT 的三個端子（引腳），分別是："></a>BJT 的三個端子（引腳），分別是：</h1><ol>
+<li>Base（基極）</li>
+</ol>
+<p>功能：</p>
+<p>控制電流</p>
+<p>特性：</p>
+<p>非常薄<br>摻雜很輕</p>
+<p>這是 BJT 能放大的關鍵。</p>
+<ol start="2">
+<li>Emitter（射極）</li>
+</ol>
+<p>功能：</p>
+<p>注入載子<br>提供主要電流來源</p>
+<p>特性：</p>
+<p>摻雜最重<br>電流能力最大</p>
+<ol start="3">
+<li>Collector（集極）</li>
+</ol>
+<p>功能：</p>
+<p>收集載子<br>輸出主要電流</p>
+<p>特性：</p>
+<p>面積較大<br>承受較高電壓</p>
+<p>共基極不是：</p>
+<p>共基極（Common Base）是「電壓放大器」，不是「電流放大器」</p>
+<p>共基極到底放大什麼？<br>項目	結果<br>電流	幾乎不放大<br>電壓	可以大幅放大<br>功率	可以放大</p>
+<p>共基極的電壓放大原因：Emitter輸入端輸入阻抗很低</p>
+<p>但Collector端輸出阻抗很高</p>
+<p>同樣大小的電流變化：</p>
+<p>流經：</p>
+<p>小電阻 → 小電壓<br>大電阻 → 大電壓</p>
+<p>因此：</p>
+<p>輸出電壓變很大</p>
+<p>CE 最重要的特性</p>
+<p>CE：</p>
+<p>電流放大 + 電壓放大</p>
+<p>兩個都有。</p>
+<p>因此：</p>
+<p>功率增益最大</p>
+<p>CC：</p>
+<p>電壓不放大<br>但電流放大很大</p>
+<p>它不是拿來放大電壓<br>而是拿來增加驅動能力</p>
+<p>因為很多初學者看到運算放大器（Op-Amp）後會想：</p>
+<p>「既然 Op-Amp 這麼強，<br>為什麼還需要 BJT &#x2F; MOSFET？」 </p>
+<p>為什麼還要直接用電晶體？</p>
+<p>因為：</p>
+<ol>
+<li>功率能力</li>
+</ol>
+<p>這是最大原因。</p>
+<p>一般 Op-Amp 很弱</p>
+<p>例如：</p>
+<p>LM358 Operational Amplifier</p>
+<p>輸出電流通常：</p>
+<p>幾 mA ~ 幾十 mA</p>
+<p>但：</p>
+<p>馬達<br>喇叭<br>繼電器<br>LED 大電流<br>電源供應器</p>
+<p>可能需要：</p>
+<p>數百 mA ~ 幾十 A</p>
+<p>Op-Amp 根本推不動。</p>
+<p>所以需要功率電晶體</p>
+<p>例如：</p>
+<p>BJT<br>MOSFET<br>IGBT</p>
+<p>來真正輸出大功率。</p>
+<p>為什麼CE型，他的C叫做輸出？我看電流方向明明是流到E</p>
+<p>在 CE（共射極）中：</p>
+<p>Collector 被稱為「輸出」，<br>不是因為電流從那裡流出去，<br>而是因為「輸出訊號」在那裡取得。</p>
+<p>電路中的「輸入&#x2F;輸出」</p>
+<p>是看：</p>
+<p>訊號在哪裡施加<br>訊號在哪裡觀察</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div></div>
+      <div>https://christo0307.github.io/Ele/BJT/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Beitragsautor</div>
+          <div>Chris Lee</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Veröffentlicht am</div>
+          <div>2026年5月17日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>Urheberrechtshinweis</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/Deutsch/IGreel/DYZtnkwvndr/" title="DYZtnkwvndr">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">DYZtnkwvndr</span>
+                        <span class="visible-mobile">Vorheriger</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/Flutter_HMI/schedule/" title="">
+                        <span class="hidden-mobile"></span>
+                        <span class="visible-mobile">Nächster</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Suchen</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Stichwort</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog funktioniert am besten mit aktiviertem JavaScript</div>
+  </noscript>
+</body>
+</html>

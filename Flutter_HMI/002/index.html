@@ -1,0 +1,750 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-tw" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Chris Lee">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="程式入口點 void main() {  runApp(MyApp());} 建立一個叫 MyApp 的類別class MyApp extends StatelessWidget extends 是繼承 WidgetFlutter所有東西都是 Widget 例如：TextColumnRowButton 全部都是 Widget Text WidgetText(  “SPEED: $speed km&amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Chris Lee">
+<meta property="og:url" content="https://christo0307.github.io/Flutter_HMI/002/index.html">
+<meta property="og:site_name" content="Chris Lee">
+<meta property="og:description" content="程式入口點 void main() {  runApp(MyApp());} 建立一個叫 MyApp 的類別class MyApp extends StatelessWidget extends 是繼承 WidgetFlutter所有東西都是 Widget 例如：TextColumnRowButton 全部都是 Widget Text WidgetText(  “SPEED: $speed km&amp;">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2026-05-16T13:14:13.914Z">
+<meta property="article:modified_time" content="2026-05-16T14:50:59.933Z">
+<meta property="article:author" content="Chris Lee">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>Chris Lee</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"christo0307.github.io","root":"/","version":"1.9.9","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":false,"expand_all":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"openkounter":{"server_url":"https://open-kounter.mintimate.cn","path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 8.1.1"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content (desktop) -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Kategorien</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>Über</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile grid menu overlay -->
+<div id="mobile-grid-menu" class="d-lg-none">
+  <div class="mobile-grid-menu-inner">
+    <div class="container">
+      <div class="row">
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/categories/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-category-fill"></i>
+                  <span>Kategorien</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/about/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>Über</span>
+                </div>
+              </a>
+            </div>
+          
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-search-btn">
+            <a href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-search"></i>
+                <span>Suchen</span>
+              </div>
+            </a>
+          </div>
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-color-toggle-btn"
+               data-label-light="Hell"
+               data-label-dark="Dunkel">
+            <a href="javascript:;" aria-label="Color Toggle">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-dark" id="mobile-color-toggle-icon"></i>
+                <span id="mobile-color-toggle-label">Dunkel</span>
+              </div>
+            </a>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text=""></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2026-05-16 21:14" pubdate>
+          2026年5月16日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          4.9k wörter
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          41 minuten
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar category-bar" style="margin-right: -1rem">
+    
+
+
+
+
+
+<div class="category-list">
+  
+  
+</div>
+
+
+  </aside>
+
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header"></h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>程式入口點</p>
+<p>void main() {<br>  runApp(MyApp());<br>}</p>
+<p>建立一個叫 MyApp 的類別<br>class MyApp extends StatelessWidget</p>
+<p>extends 是繼承</p>
+<p>Widget<br>Flutter所有東西都是 Widget</p>
+<p>例如：<br>Text<br>Column<br>Row<br>Button</p>
+<p>全部都是 Widget</p>
+<p>Text Widget<br>Text(<br>  “SPEED: $speed km&#x2F;h”,<br>)</p>
+<p>$speed</p>
+<p>這叫：</p>
+<p>字串插值</p>
+<p>等於：</p>
+<p>“SPEED: “ + speed.toString()</p>
+<p>Column</p>
+<p>Column(<br>  children: []<br>)</p>
+<p>意思：</p>
+<p>垂直排列</p>
+<p>第一，為何要呼叫runApp(MyApp())，這種間接的方式寫程式？是Flutter的慣例嗎？<br>這其實牽涉到：</p>
+<p>Flutter 的 UI 架構 &#x3D; Widget Tree</p>
+<p>這是 Flutter 最核心的觀念之一。</p>
+<p>runApp() 的作用是：</p>
+<p>把某個 Widget 當成整個 App 的根節點(root)</p>
+<p>而：</p>
+<p>MyApp()</p>
+<p>其實是：</p>
+<p>建立一個 Widget 物件</p>
+<p>Flutter 的世界觀</p>
+<p>Flutter 認為：</p>
+<p>整個畫面都是 Widget</p>
+<p>包括：視窗、文字、按鈕、圖片、Layout、動畫</p>
+<p>全部都是 Widget。</p>
+<p>所以，App 本身也是 Widget。</p>
+<p>因此，runApp(MyApp());</p>
+<p>意思其實是：</p>
+<p>「把 MyApp 這個 Widget 放到螢幕上」</p>
+<p>runApp 是 Flutter Engine 提供的函式</p>
+<p>它負責：</p>
+<ol>
+<li>建立畫面</li>
+<li>啟動 rendering engine</li>
+<li>建立 Widget Tree</li>
+<li>開始 UI loop</li>
+</ol>
+<p>Widget Tree 是什麼？</p>
+<p>這超重要。</p>
+<p>Flutter UI 本質：</p>
+<p>是一棵樹</p>
+<p>例如：</p>
+<p>MyApp<br> └── MaterialApp<br>      └── DashboardPage<br>           └── Scaffold<br>                └── Column<br>                     ├── Text<br>                     ├── Text<br>                     └── Text</p>
+<p>你現在真正該理解的核心</p>
+<p>Flutter 不是：</p>
+<p>「寫程式控制UI」</p>
+<p>而是：</p>
+<p>「用 Widget 描述UI」</p>
+<p>這是最重要的思想轉變。</p>
+<p>MyApp<br>App 入口</p>
+<p>通常 Stateless。</p>
+<p>class DashboardPage extends StatefulWidget<br>這是Widget class<br>負責描述：「這是一個會有 State 的 Widget」</p>
+<p>class _DashboardPageState extends State<DashboardPage><br>這是State class<br>負責：真正資料、邏輯、UI 更新</p>
+<p>Widget 是描述<br>State 才是資料</p>
+<p>簡單來說，這段程式碼的作用就是：「建立一個不需要改變狀態的 App 外殼（MyApp），使用 Google 設計風格（MaterialApp），把除錯標籤藏起來，並且一開機就直接顯示儀表板頁面（DashboardPage）。」</p>
+<ol>
+<li>宣告元件類別<br>Dart<br>class MyApp extends StatelessWidget {<br>class MyApp：宣告一個名叫 MyApp 的自訂類別，這通常是整個 Flutter App 的根元件（Root Widget）。</li>
+</ol>
+<p>extends StatelessWidget：讓 MyApp 繼承自 StatelessWidget（無狀態微件）。這代表這個元件本身不需要動態管理或改變內部狀態，它的畫面一旦建立就不會自己改變。</p>
+<ol start="2">
+<li><p>覆寫父類別方法<br>Dart<br>  @override<br>@override：這是一個註解（Annotation），告訴編譯器底下的 build 方法是要覆寫父類別（StatelessWidget）裡原有的 build 方法，確保能執行我們自己定義的畫面邏輯。</p>
+</li>
+<li><p>建構畫面核心方法<br>Dart<br>  Widget build(BuildContext context) {<br>Widget build(…)：這是每一個 Widget 的核心方法，回傳值必須是一個 Widget。當 Flutter 要渲染這個元件時，就會呼叫這個方法。</p>
+</li>
+</ol>
+<p>BuildContext context：這是「上下文物件」，包含了這個 Widget 在整個元件樹（Widget Tree）中的位置資訊與 App 的全域主題等資料。</p>
+<ol start="4">
+<li><p>回傳 App 頂層外殼<br>Dart<br> return MaterialApp(<br>return MaterialApp(：回傳一個 MaterialApp 元件。這是 Flutter 官方提供、遵循 Google Material Design 設計規範的應用程式外殼。它負責處理 App 的全域設定，例如：路由（轉場）、主題顏色、語系等。</p>
+</li>
+<li><p>設定首頁畫面<br>Dart<br>   home: DashboardPage(),<br>home:：這是 MaterialApp 的一個屬性，用來指定 App 啟動後第一個顯示的畫面（首頁）。</p>
+</li>
+</ol>
+<p>DashboardPage()：這裡呼叫了另一個自訂的 Widget（儀表板頁面），代表 App 一打開，使用者就會看到 DashboardPage 的內容。</p>
+<ol start="6">
+<li>隱藏除錯標籤<br>Dart<br>   debugShowCheckedModeBanner: false,<br>debugShowCheckedModeBanner: false：預設情況下，Flutter 在開發模式時，畫面的右上角會出現一個紅色的「DEBUG」斜角標籤。將這個屬性設為 false，就可以把那個除錯標籤隱藏，讓畫面看起來更乾淨。</li>
+</ol>
+<p>這段程式碼定義了一個名為 DashboardPage 的 有狀態微件（StatefulWidget）。在 Flutter 中，當一個畫面的內容需要根據使用者的操作、網路請求或時間而動態改變時（例如：計數器、載入中的動畫、隨資料更新的圖表），就必須使用 StatefulWidget。</p>
+<p>StatefulWidget 的特點是它一定會拆分成兩個類別（Class）來撰寫：一個是微件本身，另一個是負責管理狀態與畫面的 State 類別。你提供的這段就是第一個部分。</p>
+<ol>
+<li>宣告StatefulWidget class</li>
+</ol>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs Dart"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DashboardPage</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">StatefulWidget</span></span><br></code></pre></td></tr></table></figure>
+
+<p>class DashboardPage：宣告一個名叫 DashboardPage 的自訂類別，通常代表你的儀表板主頁面。</p>
+<p>extends StatefulWidget：讓它繼承自 StatefulWidget。這告訴 Flutter 這個元件是「有狀態」的，它的畫面在未來會隨著資料的變動而重新刷洗（Rebuild）。</p>
+<ol start="2">
+<li>綁定StatefulWidget的State class</li>
+</ol>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs Dart">State&lt;DashboardPage&gt; createState() =&gt; _DashboardPageState();<br></code></pre></td></tr></table></figure>
+
+<p>createState()：這是 StatefulWidget 核心的方法。每當這個微件被放到畫面上的時候，Flutter 就會呼叫 createState() 來幫它配對一個負責管理資料與畫面的「大腦」（也就是 State）。</p>
+<p>@override：在createState() 上方，實務上通常也會加上 @override 註解，代表它是覆寫父類別的方法。</p>
+<p>下面的StatefulWidget的State class一定長這樣</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs Dart"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">_DashboardPageState</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">State</span>&lt;<span class="hljs-title">DashboardPage</span>&gt; </span>&#123;<br>  <span class="hljs-meta">@override</span><br>  Widget build(BuildContext context) &#123;<br>    <span class="hljs-keyword">return</span> Scaffold(<br>      <span class="hljs-comment">// 這裡才是真正畫出儀表板畫面（如 AppBar, Body）的地方</span><br>    );<br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<p>當你呼叫 setState() 時，這個 State 類別就會重新執行 build 來更新畫面。</p>
+<p>底線 _ 的含意：<br>在 Dart 語言中，類別名稱前面加上底線（如 _DashboardPageState），代表這個類別是私有的（Private）。這意味著這個大腦只服務 DashboardPage，其他的檔案是無法直接存取它的。這是一個很好的封裝實踐。</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs Dart"><span class="hljs-comment">// 1. 宣告 StatefulWidget class</span><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DashboardPage</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">StatefulWidget</span> </span>&#123;<br>  <span class="hljs-comment">// 2. 覆寫並綁定 StatefulWidget 的 State class</span><br>  <span class="hljs-meta">@override</span><br>  State&lt;DashboardPage&gt; createState() =&gt; _DashboardPageState();<br>&#125;<br><br><span class="hljs-comment">// 3. 專屬於 DashboardPage 的私有 State class</span><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">_DashboardPageState</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">State</span>&lt;<span class="hljs-title">DashboardPage</span>&gt; </span>&#123;<br>  <span class="hljs-meta">@override</span><br>  Widget build(BuildContext context) &#123;<br>    <span class="hljs-keyword">return</span> Scaffold(<br>      <span class="hljs-comment">// 這裡才是真正畫出儀表板畫面（如 AppBar, Body）的地方</span><br>    );<br>  &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs Dart"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">_DashboardPageState</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">State</span>&lt;<span class="hljs-title">DashboardPage</span>&gt; </span>&#123;<br><br>  <span class="hljs-built_in">int</span> speed = <span class="hljs-number">80</span>;<br>  <span class="hljs-built_in">int</span> rpm = <span class="hljs-number">3200</span>;<br>  <span class="hljs-built_in">int</span> fuel = <span class="hljs-number">75</span>;<br></code></pre></td></tr></table></figure>
+
+<p>class _DashboardPageState …：定義專屬於 DashboardPage 的狀態類別。</p>
+<p>int speed &#x3D; 80;：定義一個整數變數，用來記錄車速，預設值是 80。</p>
+<p>int rpm &#x3D; 3200;：定義一個整數變數，用來記錄引擎轉速，預設值是 3200。</p>
+<p>int fuel &#x3D; 75;：定義一個整數變數，用來記錄剩餘油量百分比，預設值是 75。</p>
+<p>註：這三個變數就是這個頁面的「狀態（State）」，未來如果呼叫 setState() 改變它們，畫面上的數字就會跟著變。</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs Dart"><span class="hljs-meta">@override</span><br>  Widget build(BuildContext context) &#123;<br>    <span class="hljs-keyword">return</span> Scaffold(<br>      backgroundColor: Colors.black,<br></code></pre></td></tr></table></figure>
+
+<p>return Scaffold(…)：Scaffold 是 Flutter 內建的頁面鷹架。它提供了一個標準的頁面結構（可以放導覽列、側邊欄、主體等）。</p>
+<p>backgroundColor: Colors.black：將整個頁面的背景顏色設定為黑色，這樣能讓儀表板的數據看起來更顯眼（有科技感）。</p>
+<p>版面配置：置中與垂直排列 (Center &amp; Column)</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs Dart">body: Center(<br>  child: Column(<br>    mainAxisAlignment: MainAxisAlignment.center,<br>    children: [<br></code></pre></td></tr></table></figure>
+<p>body:：設定 Scaffold 的主體內容。</p>
+<p>Center(…)：一個版面配置元件，會把它裡面的子元件（child）拉到畫面的正中央。</p>
+<p>Column(…)：一個垂直排列的佈局元件，會把它裡面的所有子元件（children）由上到下一列一列排好。</p>
+<p>mainAxisAlignment: MainAxisAlignment.center：讓 Column 內的所有子元件在垂直方向上也居中對齊。</p>
+<p>children: […]：裡面放的是一個陣列（List），用來放置所有要垂直排列的元件。</p>
+<ol start="4">
+<li>顯示時速 (SPEED)</li>
+</ol>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs Dart">Text(<br>  <span class="hljs-string">&quot;SPEED: <span class="hljs-subst">$speed</span> km/h&quot;</span>,<br>  style: TextStyle(<br>    color: Colors.green,<br>    fontSize: <span class="hljs-number">40</span>,<br>  ),<br>),<br></code></pre></td></tr></table></figure>
+
+<p>Text(…)：用來顯示文字的元件。</p>
+<p>“SPEED: $speed km&#x2F;h”：這裡用了 Dart 的字串插值（String Interpolation）。$speed 會被自動替換成上面定義的變數值，所以畫面上會顯示 SPEED: 80 km&#x2F;h。</p>
+<p>style: TextStyle(…)：設定文字的樣式。</p>
+<p>color: Colors.green：字體顏色設為綠色。</p>
+<p>fontSize: 40：字體大小設為 40（非常大且清晰）。</p>
+<ol start="5">
+<li>區隔區塊 (SizedBox)</li>
+</ol>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs Dart">SizedBox(height: <span class="hljs-number">20</span>),<br></code></pre></td></tr></table></figure>
+<p>SizedBox(height: 20)：這是一個隱形的盒子。在這裡的作用是充當間隔（Margin），在時速和轉速之間空出 20 個邏輯像素的垂直距離，避免文字擠在一起。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div></div>
+      <div>https://christo0307.github.io/Flutter_HMI/002/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Beitragsautor</div>
+          <div>Chris Lee</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Veröffentlicht am</div>
+          <div>2026年5月16日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>Urheberrechtshinweis</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/Flutter_HMI/schedule/" title="">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile"></span>
+                        <span class="visible-mobile">Vorheriger</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/Flutter_HMI/001/" title="">
+                        <span class="hidden-mobile"></span>
+                        <span class="visible-mobile">Nächster</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Suchen</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Stichwort</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog funktioniert am besten mit aktiviertem JavaScript</div>
+  </noscript>
+</body>
+</html>

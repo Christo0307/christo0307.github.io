@@ -1,0 +1,721 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-tw" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Chris Lee">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="車用 Flutter for HMI 完整學習計畫（6 個月） 最終目標專案 6 個月後完成： 「Flutter 車用數位儀表板系統」 功能： Linux 開機自動啟動Flutter 全螢幕60 FPS UICAN Bus 模擬RPM &#x2F; Speed 動畫車門狀態油量警告燈夜間模式車道線動畫Raspberry Pi &#x2F; Jetson 執行 第 1 週：Dart 基礎 學習： c">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Chris Lee">
+<meta property="og:url" content="https://christo0307.github.io/Flutter_HMI/schedule/index.html">
+<meta property="og:site_name" content="Chris Lee">
+<meta property="og:description" content="車用 Flutter for HMI 完整學習計畫（6 個月） 最終目標專案 6 個月後完成： 「Flutter 車用數位儀表板系統」 功能： Linux 開機自動啟動Flutter 全螢幕60 FPS UICAN Bus 模擬RPM &#x2F; Speed 動畫車門狀態油量警告燈夜間模式車道線動畫Raspberry Pi &#x2F; Jetson 執行 第 1 週：Dart 基礎 學習： c">
+<meta property="og:locale" content="zh_TW">
+<meta property="article:published_time" content="2026-05-16T15:01:18.492Z">
+<meta property="article:modified_time" content="2026-05-16T15:01:18.492Z">
+<meta property="article:author" content="Chris Lee">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>Chris Lee</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+  
+<link rel="stylesheet" href="/css/custom.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"christo0307.github.io","root":"/","version":"1.9.9","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":false,"expand_all":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"openkounter":{"server_url":"https://open-kounter.mintimate.cn","path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 8.1.1"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content (desktop) -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>Kategorien</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>Über</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile grid menu overlay -->
+<div id="mobile-grid-menu" class="d-lg-none">
+  <div class="mobile-grid-menu-inner">
+    <div class="container">
+      <div class="row">
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/categories/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-category-fill"></i>
+                  <span>Kategorien</span>
+                </div>
+              </a>
+            </div>
+          
+        
+          
+          
+          
+          
+            <div class="col-4 mobile-grid-cell">
+              <a href="/about/" target="_self">
+                <div class="mobile-grid-item">
+                  <i class="iconfont icon-user-fill"></i>
+                  <span>Über</span>
+                </div>
+              </a>
+            </div>
+          
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-search-btn">
+            <a href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-search"></i>
+                <span>Suchen</span>
+              </div>
+            </a>
+          </div>
+        
+        
+          <div class="col-4 mobile-grid-cell" id="mobile-color-toggle-btn"
+               data-label-light="Hell"
+               data-label-dark="Dunkel">
+            <a href="javascript:;" aria-label="Color Toggle">
+              <div class="mobile-grid-item">
+                <i class="iconfont icon-dark" id="mobile-color-toggle-icon"></i>
+                <span id="mobile-color-toggle-label">Dunkel</span>
+              </div>
+            </a>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text=""></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2026-05-16 23:01" pubdate>
+          2026年5月16日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          2k wörter
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          17 minuten
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar category-bar" style="margin-right: -1rem">
+    
+
+
+
+
+
+<div class="category-list">
+  
+  
+</div>
+
+
+  </aside>
+
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header"></h1>
+            
+            
+              <div class="markdown-body">
+                
+                <p>車用 Flutter for HMI 完整學習計畫（6 個月）</p>
+<p>最終目標專案</p>
+<p>6 個月後完成：</p>
+<p>「Flutter 車用數位儀表板系統」</p>
+<p>功能：</p>
+<p>Linux 開機自動啟動<br>Flutter 全螢幕<br>60 FPS UI<br>CAN Bus 模擬<br>RPM &#x2F; Speed 動畫<br>車門狀態<br>油量<br>警告燈<br>夜間模式<br>車道線動畫<br>Raspberry Pi &#x2F; Jetson 執行</p>
+<p>第 1 週：Dart 基礎</p>
+<p>學習：</p>
+<p>class<br>constructor<br>async &#x2F; await<br>Future<br>Stream<br>List &#x2F; Map<br>null safety</p>
+<p>練習：</p>
+<p>做 CLI 小程式<br>模擬感測器資料更新</p>
+<p>例如：</p>
+<p>speed +&#x3D; 5;<br>rpm +&#x3D; 200;<br>第 2 週：Flutter UI 基礎</p>
+<p>學：</p>
+<p>Widget<br>StatelessWidget<br>StatefulWidget<br>setState()<br>Scaffold<br>Row &#x2F; Column<br>Stack<br>Container</p>
+<p>實作：</p>
+<p>做一個：<br>車速顯示畫面</p>
+<p>顯示：</p>
+<p>Speed<br>RPM<br>Gear<br>第 3 週：Flutter 動畫</p>
+<p>必學：</p>
+<p>AnimationController<br>Tween<br>CurvedAnimation<br>AnimatedBuilder</p>
+<p>實作：</p>
+<p>動畫速度表</p>
+<p>需求：</p>
+<p>指針平滑移動<br>速度數字動畫<br>第 4 週：CustomPainter</p>
+<p>這是 HMI 核心。</p>
+<p>必學：</p>
+<p>Canvas<br>Paint<br>Path<br>drawArc()<br>drawLine()<br>drawCircle()<br>月底專案</p>
+<p>完成：</p>
+<p>第一版數位儀表板</p>
+<p>功能：</p>
+<p>速度表<br>RPM 表<br>平滑動畫<br>第二階段（第 2 個月）<br>車用 UI 與 HMI 設計</p>
+<p>目標：</p>
+<p>做出真正像車機的 UI<br>第 5 週：HMI Layout</p>
+<p>學：</p>
+<p>響應式 UI<br>16:9 車機版面<br>SafeArea<br>MediaQuery<br>第 6 週：主題系統</p>
+<p>學：</p>
+<p>ThemeData<br>Dark Theme<br>車用夜間模式<br>第 7 週：車機元件</p>
+<p>實作：</p>
+<p>中控 UI</p>
+<p>包含：</p>
+<p>音樂播放器<br>空調控制<br>導航頁面<br>側邊欄<br>第 8 週：ADAS UI</p>
+<p>做：</p>
+<p>車道線<br>前車動畫<br>距離顯示<br>月底專案</p>
+<p>完成：</p>
+<p>第二版車用 HMI</p>
+<p>功能：</p>
+<p>多頁面切換<br>儀表 + 中控<br>ADAS<br>第三階段（第 3 個月）<br>Linux Embedded + Flutter</p>
+<p>目標：</p>
+<p>讓 Flutter 真正跑在 Embedded Linux<br>第 9 週：Linux 圖形系統</p>
+<p>理解：</p>
+<p>Framebuffer<br>DRM&#x2F;KMS<br>Wayland<br>X11<br>第 10 週：Flutter Linux</p>
+<p>學：</p>
+<p>Linux build<br>fullscreen<br>kiosk mode</p>
+<p>你其實已經做過一些。</p>
+<p>第 11 週：Jetson &#x2F; Raspberry Pi</p>
+<p>實作：</p>
+<p>Flutter 開機自動啟動</p>
+<p>學：</p>
+<p>systemd<br>autostart<br>shell script<br>第 12 週：GPU 與效能</p>
+<p>理解：</p>
+<p>OpenGL ES<br>Flutter Rendering<br>UI thread<br>GPU thread<br>月底專案</p>
+<p>完成：</p>
+<p>Embedded Linux 車機</p>
+<p>功能：</p>
+<p>開機直接進 Flutter<br>全螢幕<br>觸控操作<br>第四階段（第 4 個月）<br>車用通訊</p>
+<p>目標：</p>
+<p>Flutter 與車身資料連接<br>第 13 週：CAN Bus 理論</p>
+<p>學：</p>
+<p>CAN Frame<br>Arbitration<br>CAN ID<br>DLC<br>Standard &#x2F; Extended<br>第 14 週：SocketCAN</p>
+<p>Linux：</p>
+<p>candump<br>cansend<br>第 15 週：Flutter + CAN</p>
+<p>架構：</p>
+<p>Flutter<br>   ↓<br>FFI &#x2F; C++<br>   ↓<br>SocketCAN<br>第 16 週：MCU ↔ Flutter</p>
+<p>用：</p>
+<p>UART<br>USB CDC<br>SPI</p>
+<p>讓 MCU 資料進 Flutter。</p>
+<p>這部分你很有優勢。</p>
+<p>月底專案</p>
+<p>完成：</p>
+<p>真實 CAN 儀表板</p>
+<p>功能：</p>
+<p>CAN 收 Speed<br>CAN 收 RPM<br>UI 即時更新<br>第五階段（第 5 個月）<br>高級 Flutter 與 Native 整合</p>
+<p>目標：</p>
+<p>學會真正商業級架構<br>第 17 週：Platform Channel</p>
+<p>學：</p>
+<p>Flutter ↔ C++</p>
+<p>第 18 週：FFI</p>
+<p>Dart 呼叫：</p>
+<p>C<br>C++<br>Rust<br>第 19 週：狀態管理</p>
+<p>學：</p>
+<p>Riverpod<br>Provider</p>
+<p>車機一定需要。</p>
+<p>第 20 週：模組化架構</p>
+<p>學：</p>
+<p>Clean Architecture<br>Repository Pattern<br>月底專案</p>
+<p>完成：</p>
+<p>商業級 HMI 架構</p>
+<p>功能：</p>
+<p>分層<br>可維護<br>Native plugin<br>第六階段（第 6 個月）<br>最終車機專案</p>
+<p>目標：</p>
+<p>做出可放作品集的 Demo<br>第 21 週：完整儀表板</p>
+<p>功能：</p>
+<p>Speed<br>RPM<br>Fuel<br>Warning<br>第 22 週：ADAS</p>
+<p>功能：</p>
+<p>車道線<br>前車<br>ACC<br>第 23 週：效能最佳化</p>
+<p>目標：</p>
+<p>60 FPS<br>低延遲<br>Memory optimization<br>第 24 週：部署與作品集</p>
+<p>做：</p>
+<p>GitHub<br>README<br>Demo Video<br>架構圖<br>建議硬體<br>入門<br>Raspberry Pi Pi 4 &#x2F; 5<br>USB CAN Adapter<br>中階<br>NVIDIA Jetson Nano<br>車規方向<br>NXP i.MX8<br>Renesas R-Car<br>TI Jacinto<br>建議技術樹<br>Flutter<br> ├─ UI<br> ├─ Animation<br> ├─ CustomPainter<br> ├─ Linux<br> ├─ Embedded<br> ├─ CAN Bus<br> ├─ FFI<br> ├─ C++<br> ├─ GPU<br> └─ Automotive Architecture</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div></div>
+      <div>https://christo0307.github.io/Flutter_HMI/schedule/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>Beitragsautor</div>
+          <div>Chris Lee</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>Veröffentlicht am</div>
+          <div>2026年5月16日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>Urheberrechtshinweis</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/Ele/BJT/" title="">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile"></span>
+                        <span class="visible-mobile">Vorheriger</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/Flutter_HMI/002/" title="">
+                        <span class="hidden-mobile"></span>
+                        <span class="visible-mobile">Nächster</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Suchen</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">Stichwort</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">Blog funktioniert am besten mit aktiviertem JavaScript</div>
+  </noscript>
+</body>
+</html>
