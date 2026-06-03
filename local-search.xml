@@ -4,6 +4,27 @@
   
   
   <entry>
+    <title>CAN Bootloader</title>
+    <link href="/Deutsch/Tagebuch/20260603_CAN-Bootloader/"/>
+    <url>/Deutsch/Tagebuch/20260603_CAN-Bootloader/</url>
+    
+    <content type="html"><![CDATA[<h1 id="CAN-Bootloader-3-Juni"><a href="#CAN-Bootloader-3-Juni" class="headerlink" title="CAN Bootloader (3. Juni)"></a>CAN Bootloader (3. Juni)</h1><p>Geschafft!</p><p>Endlich habe ich meinen CAN-Bootloader fertiggestellt.</p><p>Dabei habe ich ISO-15765 und ISO-14229 gelernt und das UDS-Protokoll für Automotive-Firmware-Updates selbst implementiert.</p><p>Der vom MCU-Hersteller bereitgestellte Code entsprach den Spezifikationen nicht vollständig.</p><p>Deshalb habe ich mich selbst in die Protokolle eingearbeitet und die gesamte Lösung entwickelt.</p><p>Das ist ein tolles Gefühl.</p><h2 id="翻譯"><a href="#翻譯" class="headerlink" title="翻譯"></a>翻譯</h2><p>太棒了。</p><p>終於我做出自己的CAN-Bootloader了。</p><p>我學會了ISO-15765和ISO-14229，並且遵照UDS協議，寫出韌體更新協議</p><p>MCU 原廠的程式，並沒有照著協議去寫。</p><p>我是自己一邊學，一邊寫出韌體更新程式(整個解決方案)的。</p><p>真有成就感。</p><h2 id="這句怎麼說-Wie-sagt-man-das-auf-Deutsch"><a href="#這句怎麼說-Wie-sagt-man-das-auf-Deutsch" class="headerlink" title="這句怎麼說(Wie sagt man das auf Deutsch)"></a>這句怎麼說(Wie sagt man das auf Deutsch)</h2><h3 id="「終於完成了！」怎麼說？"><a href="#「終於完成了！」怎麼說？" class="headerlink" title="「終於完成了！」怎麼說？"></a>「終於完成了！」怎麼說？</h3><h4 id="Endlich"><a href="#Endlich" class="headerlink" title="Endlich!"></a>Endlich!</h4><p>Endlich habe ich es geschafft!<br>終於被我完成了！</p><h4 id="Geschafft"><a href="#Geschafft" class="headerlink" title="Geschafft!"></a>Geschafft!</h4><p>Geschafft!<br>搞定了！</p><h3 id="「做完專案」怎麼說"><a href="#「做完專案」怎麼說" class="headerlink" title="「做完專案」怎麼說"></a>「做完專案」怎麼說</h3><h4 id="fertiggestellt（完成、完工）"><a href="#fertiggestellt（完成、完工）" class="headerlink" title="fertiggestellt（完成、完工）"></a>fertiggestellt（完成、完工）</h4><p>Ich habe den CAN-Bootloader fertiggestellt.</p><h4 id="implementiert（實作完成）"><a href="#implementiert（實作完成）" class="headerlink" title="implementiert（實作完成）"></a>implementiert（實作完成）</h4><p>Ich habe einen CAN-Bootloader implementiert.</p><h4 id="entwickelt（開發完成）"><a href="#entwickelt（開發完成）" class="headerlink" title="entwickelt（開發完成）"></a>entwickelt（開發完成）</h4><p>Ich habe einen CAN-Bootloader entwickelt.</p><h4 id="zum-Laufen-gebracht（讓它成功運作起來）"><a href="#zum-Laufen-gebracht（讓它成功運作起來）" class="headerlink" title="zum Laufen gebracht（讓它成功運作起來）"></a>zum Laufen gebracht（讓它成功運作起來）</h4><p>Ich habe den CAN-Bootloader erfolgreich zum Laufen gebracht.</p><h4 id="Dabei-在這個過程中"><a href="#Dabei-在這個過程中" class="headerlink" title="Dabei: 在這個過程中"></a>Dabei: 在這個過程中</h4><p>例<br>工作時，</p><blockquote><p>Ich höre Musik.</p></blockquote><blockquote><p>Dabei trinke ich Kaffee.</p></blockquote><p>開發專案</p><blockquote><p>Ich habe einen Bootloader entwickelt.</p></blockquote><blockquote><p>Dabei habe ich viel über CAN gelernt.</p></blockquote><blockquote><p>我開發了一個 Bootloader。</p></blockquote><blockquote><p>在這個過程中我學到了很多 CAN 知識。</p></blockquote><h4 id="entsprechen-Dativ-符合、遵照"><a href="#entsprechen-Dativ-符合、遵照" class="headerlink" title="entsprechen + Dativ: 符合、遵照"></a>entsprechen + Dativ: 符合、遵照</h4><p>Die Software entspricht der Spezifikation.<br>軟體符合規範。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Deutsch</category>
+      
+      <category>Tagebuch</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>序數</title>
     <link href="/Deutsch/Grammatik/%E5%BA%8F%E6%95%B8/"/>
     <url>/Deutsch/Grammatik/%E5%BA%8F%E6%95%B8/</url>
@@ -67,6 +88,48 @@
   
   
   <entry>
+    <title>welches Kursbuch</title>
+    <link href="/Deutsch/die_E_Mail/welches_Kursbuch/"/>
+    <url>/Deutsch/die_E_Mail/welches_Kursbuch/</url>
+    
+    <content type="html"><![CDATA[<h1 id="welches-Kursbuch"><a href="#welches-Kursbuch" class="headerlink" title="welches Kursbuch"></a>welches Kursbuch</h1><p>Liebe Frau ____,</p><p>ich bin Chris aus Ihrem Deutschkurs.</p><p>Darf ich fragen, welches Kursbuch wir in B1.3 benutzen werden?</p><p>Ich möchte es online kaufen.</p><p>Vielen Dank!</p><p>Liebe Grüße</p><p>Chris</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Deutsch</category>
+      
+      <category>die_E_Mail</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>wie die Bank heßt</title>
+    <link href="/Deutsch/die_E_Mail/wie-die-Bank-he%C3%9Ft/"/>
+    <url>/Deutsch/die_E_Mail/wie-die-Bank-he%C3%9Ft/</url>
+    
+    <content type="html"><![CDATA[<h1 id="wie-die-Bank-hest"><a href="#wie-die-Bank-hest" class="headerlink" title="wie die Bank heßt"></a>wie die Bank heßt</h1><p>Liebe ____,</p><p>letzte Woche haben Sie erwähnt, dass ein Student ein Konto in Deutschland eröffnet hat.</p><p>Darf ich fragen, wie die Bank heßt?</p><p>Ich möchte ein Konto eröffnen.</p><p>Vielen Dank!</p><p>Liebe Grüße</p><p>Chris</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Deutsch</category>
+      
+      <category>die_E_Mail</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>passt</title>
     <link href="/Deutsch/M%C3%BCndliches/passt/"/>
     <url>/Deutsch/M%C3%BCndliches/passt/</url>
@@ -79,6 +142,27 @@
       <category>Deutsch</category>
       
       <category>Mündliches</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Steuererklärungsfrist</title>
+    <link href="/Deutsch/Tagebuch/20260529_Steuererkl%C3%A4rungsfrist/"/>
+    <url>/Deutsch/Tagebuch/20260529_Steuererkl%C3%A4rungsfrist/</url>
+    
+    <content type="html"><![CDATA[<h1 id="Steuererklarungsfrist-29-Mai"><a href="#Steuererklarungsfrist-29-Mai" class="headerlink" title="Steuererklärungsfrist (29. Mai)"></a>Steuererklärungsfrist (29. Mai)</h1><h2 id="這句怎麼說-Wie-sagt-man-das-auf-Deutsch"><a href="#這句怎麼說-Wie-sagt-man-das-auf-Deutsch" class="headerlink" title="這句怎麼說(Wie sagt man das auf Deutsch)"></a>這句怎麼說(Wie sagt man das auf Deutsch)</h2><h3 id="一、「我發現」怎麼說"><a href="#一、「我發現」怎麼說" class="headerlink" title="一、「我發現」怎麼說"></a>一、「我發現」怎麼說</h3><h4 id="1-Ich-habe-festgestellt-dass-…-正式、客觀地發現（工作、分析）"><a href="#1-Ich-habe-festgestellt-dass-…-正式、客觀地發現（工作、分析）" class="headerlink" title="1. Ich habe festgestellt, dass …: 正式、客觀地發現（工作、分析）"></a>1. Ich habe festgestellt, dass …: 正式、客觀地發現（工作、分析）</h4><h4 id="2-Ich-habe-gemerkt-dass-…-口語、突然察覺到"><a href="#2-Ich-habe-gemerkt-dass-…-口語、突然察覺到" class="headerlink" title="2. Ich habe gemerkt, dass …: 口語、突然察覺到"></a>2. Ich habe gemerkt, dass …: 口語、突然察覺到</h4><ul><li>Ich habe gemerkt, dass …</li><li>Ich habe gemerkt, dass ich mein Handy vergessen habe.</li></ul><h4 id="3-Jetzt-habe-ich-festgestellt-dass-…-「原來…」的感覺"><a href="#3-Jetzt-habe-ich-festgestellt-dass-…-「原來…」的感覺" class="headerlink" title="3. Jetzt habe ich festgestellt, dass …: 「原來…」的感覺"></a>3. Jetzt habe ich festgestellt, dass …: 「原來…」的感覺</h4><h4 id="4-Jetzt-weis-ich-dass-…-「原來…」的感覺"><a href="#4-Jetzt-weis-ich-dass-…-「原來…」的感覺" class="headerlink" title="4. Jetzt weiß ich, dass …: 「原來…」的感覺"></a>4. Jetzt weiß ich, dass …: 「原來…」的感覺</h4><h3 id="二、「超爽的」怎麼說"><a href="#二、「超爽的」怎麼說" class="headerlink" title="二、「超爽的」怎麼說"></a>二、「超爽的」怎麼說</h3><h4 id="1-Das-ist-echt-geil-現代口語用來表示「超爽的」。geil原意是「性興奮的」"><a href="#1-Das-ist-echt-geil-現代口語用來表示「超爽的」。geil原意是「性興奮的」" class="headerlink" title="1. Das ist echt geil!: 現代口語用來表示「超爽的」。geil原意是「性興奮的」"></a>1. Das ist echt geil!: 現代口語用來表示「超爽的」。geil原意是「性興奮的」</h4><ul><li>Wie geil ist das denn?!</li><li>這也太爽了吧？！</li></ul><p>2~4比較安全、人人都能用</p><h4 id="2-Das-ist-super"><a href="#2-Das-ist-super" class="headerlink" title="2. Das ist super!"></a>2. Das ist super!</h4><h4 id="3-Das-ist-grosartig"><a href="#3-Das-ist-grosartig" class="headerlink" title="3. Das ist großartig!"></a>3. Das ist großartig!</h4><h4 id="4-Das-ist-fantastisch"><a href="#4-Das-ist-fantastisch" class="headerlink" title="4. Das ist fantastisch!"></a>4. Das ist fantastisch!</h4><h3 id="三、「…之後，我…」怎麼說"><a href="#三、「…之後，我…」怎麼說" class="headerlink" title="三、「…之後，我…」怎麼說"></a>三、「…之後，我…」怎麼說</h3><h3 id="Nachdem-…-habe-ich-…"><a href="#Nachdem-…-habe-ich-…" class="headerlink" title="Nachdem …, habe ich …"></a>Nachdem …, habe ich …</h3><h2 id="日記內容-Tagebuch-29-Mai"><a href="#日記內容-Tagebuch-29-Mai" class="headerlink" title="日記內容 Tagebuch (29. Mai)"></a>日記內容 Tagebuch (29. Mai)</h2><p>Gestern war 29. Mai,<br>der drittletzte Tag vor der Steuererklärungsfrist.</p><p>Nachdem ich meine Steuererklärung gemacht habe,<br>habe ich festgestellt,<br>dass ich keine Steuern zahlen muss.</p><p>Jetzt weiß ich,<br>dass ich wohl arm bin.</p><p>Das ist echt geil!</p><h2 id="翻譯"><a href="#翻譯" class="headerlink" title="翻譯"></a>翻譯</h2><p>昨天是5月29日，報稅截止的前三天<br>當我報稅之後，我發現，我不用繳稅<br>現在我知道我很窮<br>超爽的</p><h2 id="單字"><a href="#單字" class="headerlink" title="單字"></a>單字</h2><h3 id="📘-Steuererklarungsfrist-報稅截止日"><a href="#📘-Steuererklarungsfrist-報稅截止日" class="headerlink" title="📘 Steuererklärungsfrist: 報稅截止日"></a>📘 Steuererklärungsfrist: 報稅截止日</h3><h3 id="📘-die-Erklarung-說明、申報"><a href="#📘-die-Erklarung-說明、申報" class="headerlink" title="📘 die Erklärung: 說明、申報"></a>📘 die Erklärung: 說明、申報</h3><h3 id="📘-die-Frist-期限、截止日期"><a href="#📘-die-Frist-期限、截止日期" class="headerlink" title="📘 die Frist: 期限、截止日期"></a>📘 die Frist: 期限、截止日期</h3><h3 id="📘-Einkommensteuer-所得稅"><a href="#📘-Einkommensteuer-所得稅" class="headerlink" title="📘 Einkommensteuer: 所得稅"></a>📘 Einkommensteuer: 所得稅</h3><h3 id="📘-die-Mehrwertsteuer-MwSt-消費稅（VAT）"><a href="#📘-die-Mehrwertsteuer-MwSt-消費稅（VAT）" class="headerlink" title="📘 die Mehrwertsteuer (MwSt.): 消費稅（VAT）"></a>📘 die Mehrwertsteuer (MwSt.): 消費稅（VAT）</h3><h3 id="📘-die-Umsatzsteuer-營業稅"><a href="#📘-die-Umsatzsteuer-營業稅" class="headerlink" title="📘 die Umsatzsteuer: 營業稅"></a>📘 die Umsatzsteuer: 營業稅</h3><h3 id="📘-die-Kfz-Steuer-或-die-Kraftfahrzeugsteuer-汽車稅"><a href="#📘-die-Kfz-Steuer-或-die-Kraftfahrzeugsteuer-汽車稅" class="headerlink" title="📘 die Kfz-Steuer 或 die Kraftfahrzeugsteuer: 汽車稅"></a>📘 die Kfz-Steuer 或 die Kraftfahrzeugsteuer: 汽車稅</h3><h3 id="📘-die-Kapitalertragsteuer-資本利得稅"><a href="#📘-die-Kapitalertragsteuer-資本利得稅" class="headerlink" title="📘 die Kapitalertragsteuer: 資本利得稅"></a>📘 die Kapitalertragsteuer: 資本利得稅</h3><h3 id="📘-der-Zoll-關稅"><a href="#📘-der-Zoll-關稅" class="headerlink" title="📘 der Zoll: 關稅"></a>📘 der Zoll: 關稅</h3><ul><li>die Zölle（複數）</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>Deutsch</category>
+      
+      <category>Tagebuch</category>
       
     </categories>
     
@@ -176,31 +260,6 @@
   
   
   <entry>
-    <title>z132_12a</title>
-    <link href="/Deutsch/Kursbuch/B1_2/CH11/z132_12a/"/>
-    <url>/Deutsch/Kursbuch/B1_2/CH11/z132_12a/</url>
-    
-    <content type="html"><![CDATA[<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><code class="hljs mipsasm"><span class="hljs-keyword">einen </span>Stadtbummel machen<br>→ 在城市裡散步／逛街<br><br><span class="hljs-keyword">einen </span><span class="hljs-keyword">Einkaufsbummel </span>machen<br>→ 逛街購物<br><br>an <span class="hljs-keyword">einer </span>Rundfahrt teilnehmen<br>→ 參加觀光導覽／城市巡遊<br><br>auf <span class="hljs-keyword">einen </span>Turm steigen<br>→ 登上一座塔<br><br><span class="hljs-keyword">ein </span>Fahrrad mieten<br>→ 租腳踏車<br><br>in <span class="hljs-keyword">die </span>Oper gehen<br>→ 去歌劇院／看歌劇<br><br><span class="hljs-keyword">ein </span>Museum <span class="hljs-keyword">besuchen</span><br><span class="hljs-keyword"></span>→ 參觀博物館<br><br><span class="hljs-keyword">eine </span>Kirche <span class="hljs-keyword">besichtigen</span><br><span class="hljs-keyword"></span>→ 參觀教堂<br><br>in den <span class="hljs-keyword">Bergen </span>wandern<br>→ 在山區健行<br><br><span class="hljs-keyword">ein </span>Denkmal anschauen<br>→ 觀看紀念碑／古蹟<br><br>in den See springen<br>→ 跳進湖裡<br><br>mit dem <span class="hljs-keyword">Boot </span>fahren<br>→ 搭船／乘船<br><br>in der Fußgängerzone <span class="hljs-keyword">shoppen</span><br><span class="hljs-keyword"></span>→ 在徒步區購物<br></code></pre></td></tr></table></figure>]]></content>
-    
-    
-    <categories>
-      
-      <category>Deutsch</category>
-      
-      <category>Kursbuch</category>
-      
-      <category>B1_2</category>
-      
-      <category>CH11</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>z62_1a</title>
     <link href="/Deutsch/Kursbuch/B1_2/CH12/z62_1a/"/>
     <url>/Deutsch/Kursbuch/B1_2/CH12/z62_1a/</url>
@@ -217,6 +276,31 @@
       <category>B1_2</category>
       
       <category>CH12</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>z132_12a</title>
+    <link href="/Deutsch/Kursbuch/B1_2/CH11/z132_12a/"/>
+    <url>/Deutsch/Kursbuch/B1_2/CH11/z132_12a/</url>
+    
+    <content type="html"><![CDATA[<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><code class="hljs mipsasm"><span class="hljs-keyword">einen </span>Stadtbummel machen<br>→ 在城市裡散步／逛街<br><br><span class="hljs-keyword">einen </span><span class="hljs-keyword">Einkaufsbummel </span>machen<br>→ 逛街購物<br><br>an <span class="hljs-keyword">einer </span>Rundfahrt teilnehmen<br>→ 參加觀光導覽／城市巡遊<br><br>auf <span class="hljs-keyword">einen </span>Turm steigen<br>→ 登上一座塔<br><br><span class="hljs-keyword">ein </span>Fahrrad mieten<br>→ 租腳踏車<br><br>in <span class="hljs-keyword">die </span>Oper gehen<br>→ 去歌劇院／看歌劇<br><br><span class="hljs-keyword">ein </span>Museum <span class="hljs-keyword">besuchen</span><br><span class="hljs-keyword"></span>→ 參觀博物館<br><br><span class="hljs-keyword">eine </span>Kirche <span class="hljs-keyword">besichtigen</span><br><span class="hljs-keyword"></span>→ 參觀教堂<br><br>in den <span class="hljs-keyword">Bergen </span>wandern<br>→ 在山區健行<br><br><span class="hljs-keyword">ein </span>Denkmal anschauen<br>→ 觀看紀念碑／古蹟<br><br>in den See springen<br>→ 跳進湖裡<br><br>mit dem <span class="hljs-keyword">Boot </span>fahren<br>→ 搭船／乘船<br><br>in der Fußgängerzone <span class="hljs-keyword">shoppen</span><br><span class="hljs-keyword"></span>→ 在徒步區購物<br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>Deutsch</category>
+      
+      <category>Kursbuch</category>
+      
+      <category>B1_2</category>
+      
+      <category>CH11</category>
       
     </categories>
     
@@ -648,27 +732,6 @@
   
   
   <entry>
-    <title>Kinderlieder - das Lied über die Tiere</title>
-    <link href="/Deutsch/Lied/Kinderlieder%20-%20das%20Lied%20%C3%BCber%20die%20Tiere/"/>
-    <url>/Deutsch/Lied/Kinderlieder%20-%20das%20Lied%20%C3%BCber%20die%20Tiere/</url>
-    
-    <content type="html"><![CDATA[<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">    <iframe src="https://www.youtube.com/embed/0ARm654fM_A"             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"             allowfullscreen></iframe></div><div style="display: flex; flex-wrap: wrap; gap: 20px; width: 100%;">    <div style="flex: 1; min-width: 300px; padding: 15px; border-right: 1px solid #eee;">        <h3 style="color: #2f5bb7;">🇩🇪 Deutsch</h3><p>Guck mal, hier ein rotes Haus.<br>Wer rennt jetzt zu uns hinaus?<br>Und wem geb ich mein Geschenk?<br>Eins, zwei, drei, das ist ein Pferd.</p><p>Das kleine Pferd ist unser Freund, unser Freund.</p><p>Es tanzt lustig und ist froh, und ist froh.<br>Das kleine Pferd ist unser Freund, es tanzt lustig und ist froh.<br>Was geben wir unserem Pferd?</p><p>Richtig, Heu!</p><p>Guck doch, da ein gelbes Haus.<br>Wer rennt jetzt zu uns hinaus?<br>Mein Geschenk ist groß und bunt.<br>Und wem geb ich es? Dem Hund!</p><p>Der kleine Hund ist unser Freund, unser Freund.<br>Er wird lustig und ist froh, er ist froh.</p><p>Der kleine Hund ist unser Freund, er wird lustig und ist froh.<br>Was geb ich jetzt meinem Hund?</p><p>Genau, einen Knochen!</p><p>Guck mal, hier ein blaues Haus.<br>Wer rennt jetzt zu uns hinaus?<br>Es ist weiß und es ist brav.</p><p>Wer wohnt da im Haus? Ein Schaf!</p><p>Das kleine Schaf ist unser Freund, unser Freund.<br>Es hilft lustig und ist froh, es ist froh.<br>Das kleine Schaf ist unser Freund, es hilft lustig und ist froh.</p><p>Was geb ich jetzt dem Schaf?<br>Ja, Gras! Guck doch, da ein grünes Haus.</p><p>Wer schaut jetzt durchs Fenster raus?<br>Wem geb ich jetzt mein Geschenk? Sie ist groß und braun und gelb.<br>Genau, eine Giraffe!</p><p>Die Giraffe ist mein Freund, ist mein Freund.</p><p>Sie guckt lustig und ist froh, sie ist froh.</p><p>Die Giraffe ist mein Freund, sie guckt lustig und ist froh.</p><p>Sie ist froh.</p><p>Was frisst eine Giraffe?</p><p>Ja, Blätter!</p><p>Das nächste Haus ist hellblau.<br>Im kleinen Garten steht ein Baum.<br>Wer wohnt neben der Giraffe?<br>Natürlich weißt du das, ein Affe!</p><p>Der kleine Affe ist mein Freund, ist mein Freund.</p><p>Er tanzt lustig und ist froh und ist froh.<br>Der kleine Affe ist mein Freund, er tanzt lustig und ist froh.</p><p>Was kriegt der Affe?</p><p>Genau, die Bananen!</p><p>Guck mal, hier ein kleines Haus.</p><p>Wer rennt jetzt zu uns hinaus?<br>Und sie möchte mit uns spielen.<br>Ganz kleine graue Tiere, genau, Mäuse!</p><p>Jedes Mäuschen ist mein Freund, ist mein Freund.<br>Alle piepsen sehr froh, sehr froh.</p><p>Jedes Mäuschen ist mein Freund, alle piepsen sehr froh.</p><p>Was liegt drin? Ja, der Käse! Unser Traktor ist jetzt müde.</p><p>Rummt ganz leise und hat Hunger.</p><p>Unser Traktor kann nicht mehr.</p><p>Alle Tiere kommen her.</p><p>Alle Freunde helfen mit, helfen mit.</p><p>Der Traktor ist jetzt wieder fit, wieder fit.</p><p>Steig doch ein, wir fahren los. Auf die Plätze, fertig, los!</p><p>Viele Geschenke haben wir</p><p>für jeden Vogel und jedes Tier.<br>    </div><br>    <div style="flex: 1; min-width: 300px; padding: 15px;"><br>        <h3 style="color: #e67e22;">🇹🇼 中文翻譯</h3></p><p>🏠🐴 第一段（馬）</p><p>看看，這裡有一間紅色的房子。<br>現在誰會跑出來到我們這裡呢？<br>我要把禮物給誰呢？<br>一、二、三，是一匹馬！</p><p>小馬是我們的朋友，我們的朋友。</p><p>牠開心地跳舞，也很快樂，很快樂。<br>小馬是我們的朋友，牠開心地跳舞，也很快樂。</p><p>我們要給馬什麼呢？</p><p>👉 對了，滿滿的！</p><p>🏠🐶 第二段（狗）</p><p>你看，那邊有一間黃色的房子。<br>現在誰會跑出來呢？<br>我的禮物又大又繽紛。<br>我要把它給誰呢？給狗！</p><p>小狗是我們的朋友，我們的朋友。<br>牠變得開心，也很快樂，很快樂。</p><p>小狗是我們的朋友，牠變得開心，也很快樂。</p><p>現在我要給我的狗什麼呢？<br>👉 沒錯，一根骨頭！</p><p>🏠🐑 第三段（羊）</p><p>看看，這裡有一間藍色的房子。<br>現在誰會跑出來呢？<br>牠是白色的，也很乖。</p><p>誰住在這間房子裡呢？一隻羊！</p><p>小羊是我們的朋友，我們的朋友。<br>牠開心地幫忙，也很快樂，很快樂。</p><p>小羊是我們的朋友，牠開心地幫忙，也很快樂。</p><p>現在我要給羊什麼呢？<br>👉 對，草！</p><p>🏠🦒 第四段（長頸鹿）</p><p>你看，那裡有一間綠色的房子。</p><p>現在誰從窗戶往外看呢？<br>我要把禮物給誰呢？牠又大又是棕黃相間的。<br>👉 沒錯，是長頸鹿！</p><p>長頸鹿是我的朋友，我的朋友。</p><p>牠開心地看著，也很快樂，很快樂。</p><p>長頸鹿是我的朋友，牠開心地看著，也很快樂。</p><p>牠很快樂。</p><p>長頸鹿吃什麼呢？<br>👉 對，葉子！</p><p>🏠🐒 第五段（猴子）</p><p>下一間房子是淺藍色的。<br>小小的花園裡有一棵樹。<br>誰住在長頸鹿旁邊呢？<br>你當然知道，是一隻猴子！</p><p>小猴子是我的朋友，我的朋友。</p><p>牠開心地跳舞，也很快樂，很快樂。<br>小猴子是我的朋友，牠開心地跳舞，也很快樂。</p><p>猴子會得到什麼呢？<br>👉 沒錯，是香蕉！</p><p>🏠🐭 第六段（老鼠）</p><p>看看，這裡有一間小房子。</p><p>現在誰跑出來呢？<br>牠們想跟我們一起玩。<br>很小的灰色動物，對，是老鼠！</p><p>每一隻小老鼠都是我的朋友，我的朋友。<br>牠們都開心地吱吱叫，很快樂，很快樂。</p><p>每一隻小老鼠都是我的朋友，牠們都很快樂地吱吱叫。</p><p>裡面有什麼呢？<br>👉 對，是起司！</p><p>🚜 結尾（拖拉機）</p><p>我們的拖拉機現在累了。</p><p>低聲地轟隆作響，而且肚子餓了。</p><p>我們的拖拉機撐不住了。</p><p>所有動物都過來幫忙。</p><p>所有朋友一起幫忙，一起幫忙。</p><p>拖拉機現在又恢復正常了，又恢復正常了。</p><p>快上車吧，我們要出發了！<br>各就各位，預備，出發！</p><p>我們有很多禮物</p><p>要送給每一隻鳥和每一隻動物。<br>    </div></p></div>]]></content>
-    
-    
-    <categories>
-      
-      <category>Deutsch</category>
-      
-      <category>Lied</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>Zum Alpha bestimmt 01</title>
     <link href="/Deutsch/ReelShort/Zum-Alpha-bestimmt_01/"/>
     <url>/Deutsch/ReelShort/Zum-Alpha-bestimmt_01/</url>
@@ -681,6 +744,27 @@
       <category>Deutsch</category>
       
       <category>ReelShort</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Kinderlieder - das Lied über die Tiere</title>
+    <link href="/Deutsch/Lied/Kinderlieder%20-%20das%20Lied%20%C3%BCber%20die%20Tiere/"/>
+    <url>/Deutsch/Lied/Kinderlieder%20-%20das%20Lied%20%C3%BCber%20die%20Tiere/</url>
+    
+    <content type="html"><![CDATA[<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">    <iframe src="https://www.youtube.com/embed/0ARm654fM_A"             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;"             allowfullscreen></iframe></div><div style="display: flex; flex-wrap: wrap; gap: 20px; width: 100%;">    <div style="flex: 1; min-width: 300px; padding: 15px; border-right: 1px solid #eee;">        <h3 style="color: #2f5bb7;">🇩🇪 Deutsch</h3><p>Guck mal, hier ein rotes Haus.<br>Wer rennt jetzt zu uns hinaus?<br>Und wem geb ich mein Geschenk?<br>Eins, zwei, drei, das ist ein Pferd.</p><p>Das kleine Pferd ist unser Freund, unser Freund.</p><p>Es tanzt lustig und ist froh, und ist froh.<br>Das kleine Pferd ist unser Freund, es tanzt lustig und ist froh.<br>Was geben wir unserem Pferd?</p><p>Richtig, Heu!</p><p>Guck doch, da ein gelbes Haus.<br>Wer rennt jetzt zu uns hinaus?<br>Mein Geschenk ist groß und bunt.<br>Und wem geb ich es? Dem Hund!</p><p>Der kleine Hund ist unser Freund, unser Freund.<br>Er wird lustig und ist froh, er ist froh.</p><p>Der kleine Hund ist unser Freund, er wird lustig und ist froh.<br>Was geb ich jetzt meinem Hund?</p><p>Genau, einen Knochen!</p><p>Guck mal, hier ein blaues Haus.<br>Wer rennt jetzt zu uns hinaus?<br>Es ist weiß und es ist brav.</p><p>Wer wohnt da im Haus? Ein Schaf!</p><p>Das kleine Schaf ist unser Freund, unser Freund.<br>Es hilft lustig und ist froh, es ist froh.<br>Das kleine Schaf ist unser Freund, es hilft lustig und ist froh.</p><p>Was geb ich jetzt dem Schaf?<br>Ja, Gras! Guck doch, da ein grünes Haus.</p><p>Wer schaut jetzt durchs Fenster raus?<br>Wem geb ich jetzt mein Geschenk? Sie ist groß und braun und gelb.<br>Genau, eine Giraffe!</p><p>Die Giraffe ist mein Freund, ist mein Freund.</p><p>Sie guckt lustig und ist froh, sie ist froh.</p><p>Die Giraffe ist mein Freund, sie guckt lustig und ist froh.</p><p>Sie ist froh.</p><p>Was frisst eine Giraffe?</p><p>Ja, Blätter!</p><p>Das nächste Haus ist hellblau.<br>Im kleinen Garten steht ein Baum.<br>Wer wohnt neben der Giraffe?<br>Natürlich weißt du das, ein Affe!</p><p>Der kleine Affe ist mein Freund, ist mein Freund.</p><p>Er tanzt lustig und ist froh und ist froh.<br>Der kleine Affe ist mein Freund, er tanzt lustig und ist froh.</p><p>Was kriegt der Affe?</p><p>Genau, die Bananen!</p><p>Guck mal, hier ein kleines Haus.</p><p>Wer rennt jetzt zu uns hinaus?<br>Und sie möchte mit uns spielen.<br>Ganz kleine graue Tiere, genau, Mäuse!</p><p>Jedes Mäuschen ist mein Freund, ist mein Freund.<br>Alle piepsen sehr froh, sehr froh.</p><p>Jedes Mäuschen ist mein Freund, alle piepsen sehr froh.</p><p>Was liegt drin? Ja, der Käse! Unser Traktor ist jetzt müde.</p><p>Rummt ganz leise und hat Hunger.</p><p>Unser Traktor kann nicht mehr.</p><p>Alle Tiere kommen her.</p><p>Alle Freunde helfen mit, helfen mit.</p><p>Der Traktor ist jetzt wieder fit, wieder fit.</p><p>Steig doch ein, wir fahren los. Auf die Plätze, fertig, los!</p><p>Viele Geschenke haben wir</p><p>für jeden Vogel und jedes Tier.<br>    </div><br>    <div style="flex: 1; min-width: 300px; padding: 15px;"><br>        <h3 style="color: #e67e22;">🇹🇼 中文翻譯</h3></p><p>🏠🐴 第一段（馬）</p><p>看看，這裡有一間紅色的房子。<br>現在誰會跑出來到我們這裡呢？<br>我要把禮物給誰呢？<br>一、二、三，是一匹馬！</p><p>小馬是我們的朋友，我們的朋友。</p><p>牠開心地跳舞，也很快樂，很快樂。<br>小馬是我們的朋友，牠開心地跳舞，也很快樂。</p><p>我們要給馬什麼呢？</p><p>👉 對了，滿滿的！</p><p>🏠🐶 第二段（狗）</p><p>你看，那邊有一間黃色的房子。<br>現在誰會跑出來呢？<br>我的禮物又大又繽紛。<br>我要把它給誰呢？給狗！</p><p>小狗是我們的朋友，我們的朋友。<br>牠變得開心，也很快樂，很快樂。</p><p>小狗是我們的朋友，牠變得開心，也很快樂。</p><p>現在我要給我的狗什麼呢？<br>👉 沒錯，一根骨頭！</p><p>🏠🐑 第三段（羊）</p><p>看看，這裡有一間藍色的房子。<br>現在誰會跑出來呢？<br>牠是白色的，也很乖。</p><p>誰住在這間房子裡呢？一隻羊！</p><p>小羊是我們的朋友，我們的朋友。<br>牠開心地幫忙，也很快樂，很快樂。</p><p>小羊是我們的朋友，牠開心地幫忙，也很快樂。</p><p>現在我要給羊什麼呢？<br>👉 對，草！</p><p>🏠🦒 第四段（長頸鹿）</p><p>你看，那裡有一間綠色的房子。</p><p>現在誰從窗戶往外看呢？<br>我要把禮物給誰呢？牠又大又是棕黃相間的。<br>👉 沒錯，是長頸鹿！</p><p>長頸鹿是我的朋友，我的朋友。</p><p>牠開心地看著，也很快樂，很快樂。</p><p>長頸鹿是我的朋友，牠開心地看著，也很快樂。</p><p>牠很快樂。</p><p>長頸鹿吃什麼呢？<br>👉 對，葉子！</p><p>🏠🐒 第五段（猴子）</p><p>下一間房子是淺藍色的。<br>小小的花園裡有一棵樹。<br>誰住在長頸鹿旁邊呢？<br>你當然知道，是一隻猴子！</p><p>小猴子是我的朋友，我的朋友。</p><p>牠開心地跳舞，也很快樂，很快樂。<br>小猴子是我的朋友，牠開心地跳舞，也很快樂。</p><p>猴子會得到什麼呢？<br>👉 沒錯，是香蕉！</p><p>🏠🐭 第六段（老鼠）</p><p>看看，這裡有一間小房子。</p><p>現在誰跑出來呢？<br>牠們想跟我們一起玩。<br>很小的灰色動物，對，是老鼠！</p><p>每一隻小老鼠都是我的朋友，我的朋友。<br>牠們都開心地吱吱叫，很快樂，很快樂。</p><p>每一隻小老鼠都是我的朋友，牠們都很快樂地吱吱叫。</p><p>裡面有什麼呢？<br>👉 對，是起司！</p><p>🚜 結尾（拖拉機）</p><p>我們的拖拉機現在累了。</p><p>低聲地轟隆作響，而且肚子餓了。</p><p>我們的拖拉機撐不住了。</p><p>所有動物都過來幫忙。</p><p>所有朋友一起幫忙，一起幫忙。</p><p>拖拉機現在又恢復正常了，又恢復正常了。</p><p>快上車吧，我們要出發了！<br>各就各位，預備，出發！</p><p>我們有很多禮物</p><p>要送給每一隻鳥和每一隻動物。<br>    </div></p></div>]]></content>
+    
+    
+    <categories>
+      
+      <category>Deutsch</category>
+      
+      <category>Lied</category>
       
     </categories>
     
@@ -723,27 +807,6 @@
       <category>Deutsch</category>
       
       <category>IGreel</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Steuererklärungsfrist</title>
-    <link href="/Deutsch/Tagebuch/20260529_Steuererkl%C3%A4rungsfrist/"/>
-    <url>/Deutsch/Tagebuch/20260529_Steuererkl%C3%A4rungsfrist/</url>
-    
-    <content type="html"><![CDATA[<h1 id="Steuererklarungsfrist-29-Mai"><a href="#Steuererklarungsfrist-29-Mai" class="headerlink" title="Steuererklärungsfrist (29. Mai)"></a>Steuererklärungsfrist (29. Mai)</h1><h2 id="這句怎麼說-Wie-sagt-man-das-auf-Deutsch"><a href="#這句怎麼說-Wie-sagt-man-das-auf-Deutsch" class="headerlink" title="這句怎麼說(Wie sagt man das auf Deutsch)"></a>這句怎麼說(Wie sagt man das auf Deutsch)</h2><h3 id="一、「我發現」怎麼說"><a href="#一、「我發現」怎麼說" class="headerlink" title="一、「我發現」怎麼說"></a>一、「我發現」怎麼說</h3><h4 id="1-Ich-habe-festgestellt-dass-…-正式、客觀地發現（工作、分析）"><a href="#1-Ich-habe-festgestellt-dass-…-正式、客觀地發現（工作、分析）" class="headerlink" title="1. Ich habe festgestellt, dass …: 正式、客觀地發現（工作、分析）"></a>1. Ich habe festgestellt, dass …: 正式、客觀地發現（工作、分析）</h4><h4 id="2-Ich-habe-gemerkt-dass-…-口語、突然察覺到"><a href="#2-Ich-habe-gemerkt-dass-…-口語、突然察覺到" class="headerlink" title="2. Ich habe gemerkt, dass …: 口語、突然察覺到"></a>2. Ich habe gemerkt, dass …: 口語、突然察覺到</h4><ul><li>Ich habe gemerkt, dass …</li><li>Ich habe gemerkt, dass ich mein Handy vergessen habe.</li></ul><h4 id="3-Jetzt-habe-ich-festgestellt-dass-…-「原來…」的感覺"><a href="#3-Jetzt-habe-ich-festgestellt-dass-…-「原來…」的感覺" class="headerlink" title="3. Jetzt habe ich festgestellt, dass …: 「原來…」的感覺"></a>3. Jetzt habe ich festgestellt, dass …: 「原來…」的感覺</h4><h4 id="4-Jetzt-weis-ich-dass-…-「原來…」的感覺"><a href="#4-Jetzt-weis-ich-dass-…-「原來…」的感覺" class="headerlink" title="4. Jetzt weiß ich, dass …: 「原來…」的感覺"></a>4. Jetzt weiß ich, dass …: 「原來…」的感覺</h4><h3 id="二、「超爽的」怎麼說"><a href="#二、「超爽的」怎麼說" class="headerlink" title="二、「超爽的」怎麼說"></a>二、「超爽的」怎麼說</h3><h4 id="1-Das-ist-echt-geil-現代口語用來表示「超爽的」。geil原意是「性興奮的」"><a href="#1-Das-ist-echt-geil-現代口語用來表示「超爽的」。geil原意是「性興奮的」" class="headerlink" title="1. Das ist echt geil!: 現代口語用來表示「超爽的」。geil原意是「性興奮的」"></a>1. Das ist echt geil!: 現代口語用來表示「超爽的」。geil原意是「性興奮的」</h4><ul><li>Wie geil ist das denn?!</li><li>這也太爽了吧？！</li></ul><p>2~4比較安全、人人都能用</p><h4 id="2-Das-ist-super"><a href="#2-Das-ist-super" class="headerlink" title="2. Das ist super!"></a>2. Das ist super!</h4><h4 id="3-Das-ist-grosartig"><a href="#3-Das-ist-grosartig" class="headerlink" title="3. Das ist großartig!"></a>3. Das ist großartig!</h4><h4 id="4-Das-ist-fantastisch"><a href="#4-Das-ist-fantastisch" class="headerlink" title="4. Das ist fantastisch!"></a>4. Das ist fantastisch!</h4><h3 id="三、「…之後，我…」怎麼說"><a href="#三、「…之後，我…」怎麼說" class="headerlink" title="三、「…之後，我…」怎麼說"></a>三、「…之後，我…」怎麼說</h3><h3 id="Nachdem-…-habe-ich-…"><a href="#Nachdem-…-habe-ich-…" class="headerlink" title="Nachdem …, habe ich …"></a>Nachdem …, habe ich …</h3><h2 id="日記內容-Tagebuch-29-Mai"><a href="#日記內容-Tagebuch-29-Mai" class="headerlink" title="日記內容 Tagebuch (29. Mai)"></a>日記內容 Tagebuch (29. Mai)</h2><p>Gestern war 29. Mai,<br>der drittletzte Tag vor der Steuererklärungsfrist.</p><p>Nachdem ich meine Steuererklärung gemacht habe,<br>habe ich festgestellt,<br>dass ich keine Steuern zahlen muss.</p><p>Jetzt weiß ich,<br>dass ich wohl arm bin.</p><p>Das ist echt geil!</p><h2 id="翻譯"><a href="#翻譯" class="headerlink" title="翻譯"></a>翻譯</h2><p>昨天是5月29日，報稅截止的前三天<br>當我報稅之後，我發現，我不用繳稅<br>現在我知道我很窮<br>超爽的</p><h2 id="單字"><a href="#單字" class="headerlink" title="單字"></a>單字</h2><h3 id="📘-Steuererklarungsfrist-報稅截止日"><a href="#📘-Steuererklarungsfrist-報稅截止日" class="headerlink" title="📘 Steuererklärungsfrist: 報稅截止日"></a>📘 Steuererklärungsfrist: 報稅截止日</h3><h3 id="📘-die-Erklarung-說明、申報"><a href="#📘-die-Erklarung-說明、申報" class="headerlink" title="📘 die Erklärung: 說明、申報"></a>📘 die Erklärung: 說明、申報</h3><h3 id="📘-die-Frist-期限、截止日期"><a href="#📘-die-Frist-期限、截止日期" class="headerlink" title="📘 die Frist: 期限、截止日期"></a>📘 die Frist: 期限、截止日期</h3><h3 id="📘-Einkommensteuer-所得稅"><a href="#📘-Einkommensteuer-所得稅" class="headerlink" title="📘 Einkommensteuer: 所得稅"></a>📘 Einkommensteuer: 所得稅</h3><h3 id="📘-die-Mehrwertsteuer-MwSt-消費稅（VAT）"><a href="#📘-die-Mehrwertsteuer-MwSt-消費稅（VAT）" class="headerlink" title="📘 die Mehrwertsteuer (MwSt.): 消費稅（VAT）"></a>📘 die Mehrwertsteuer (MwSt.): 消費稅（VAT）</h3><h3 id="📘-die-Umsatzsteuer-營業稅"><a href="#📘-die-Umsatzsteuer-營業稅" class="headerlink" title="📘 die Umsatzsteuer: 營業稅"></a>📘 die Umsatzsteuer: 營業稅</h3><h3 id="📘-die-Kfz-Steuer-或-die-Kraftfahrzeugsteuer-汽車稅"><a href="#📘-die-Kfz-Steuer-或-die-Kraftfahrzeugsteuer-汽車稅" class="headerlink" title="📘 die Kfz-Steuer 或 die Kraftfahrzeugsteuer: 汽車稅"></a>📘 die Kfz-Steuer 或 die Kraftfahrzeugsteuer: 汽車稅</h3><h3 id="📘-die-Kapitalertragsteuer-資本利得稅"><a href="#📘-die-Kapitalertragsteuer-資本利得稅" class="headerlink" title="📘 die Kapitalertragsteuer: 資本利得稅"></a>📘 die Kapitalertragsteuer: 資本利得稅</h3><h3 id="📘-der-Zoll-關稅"><a href="#📘-der-Zoll-關稅" class="headerlink" title="📘 der Zoll: 關稅"></a>📘 der Zoll: 關稅</h3><ul><li>die Zölle（複數）</li></ul>]]></content>
-    
-    
-    <categories>
-      
-      <category>Deutsch</category>
-      
-      <category>Tagebuch</category>
       
     </categories>
     
