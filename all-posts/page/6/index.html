@@ -111,7 +111,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/categories/" target="_self">
                 <i class="iconfont icon-category-fill"></i>
-                <span>Kategorien</span>
+                <span>Categories</span>
               </a>
             </li>
           
@@ -123,7 +123,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/about/" target="_self">
                 <i class="iconfont icon-user-fill"></i>
-                <span>Über</span>
+                <span>About</span>
               </a>
             </li>
           
@@ -162,7 +162,7 @@
               <a href="/categories/" target="_self">
                 <div class="mobile-grid-item">
                   <i class="iconfont icon-category-fill"></i>
-                  <span>Kategorien</span>
+                  <span>Categories</span>
                 </div>
               </a>
             </div>
@@ -176,7 +176,7 @@
               <a href="/about/" target="_self">
                 <div class="mobile-grid-item">
                   <i class="iconfont icon-user-fill"></i>
-                  <span>Über</span>
+                  <span>About</span>
                 </div>
               </a>
             </div>
@@ -187,19 +187,19 @@
             <a href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
               <div class="mobile-grid-item">
                 <i class="iconfont icon-search"></i>
-                <span>Suchen</span>
+                <span>Search</span>
               </div>
             </a>
           </div>
         
         
           <div class="col-4 mobile-grid-cell" id="mobile-color-toggle-btn"
-               data-label-light="Hell"
-               data-label-dark="Dunkel">
+               data-label-light="Light"
+               data-label-dark="Dark">
             <a href="javascript:;" aria-label="Color Toggle">
               <div class="mobile-grid-item">
                 <i class="iconfont icon-dark" id="mobile-color-toggle-icon"></i>
-                <span id="mobile-color-toggle-label">Dunkel</span>
+                <span id="mobile-color-toggle-label">Dark</span>
               </div>
             </a>
           </div>
@@ -259,15 +259,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/MCU/STM32/STM32F103C8T6-WithoutSTLink/" target="_self">
-          不使用ST Link，改用CH340，燒錄STM32韌體
+        <a href="/MCU/STM32/STM32F103C8T6-CAN-TJA1050/" target="_self">
+          STM32F103C8T6的CAN Bus通訊，使用TJA1050
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/MCU/STM32/STM32F103C8T6-WithoutSTLink/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/MCU/STM32/STM32F103C8T6-CAN-TJA1050/" target="_self">
         <div>
-          (Jan. 16th 2026) 早上工作在趕案子的時候，ST Link一直連不上開發板。 出現以下的錯誤畫面：  Can not connect to target!Please select “Connect Under Reset” mode from Target-&gt;Settings menuand try again.If you’re trying to connect to
+          為了方便做交叉測試和除錯，先使用比較熱門的STM32F103C8T6開發板來做CAN Bus 這幾天為了打通CAN Bus，花了我不少時間 STM32F103C8T6開發板的接線圖如下  參考的程式碼 29.CAN通信实验.rar 參考的影片網址https://www.bilibili.com/video/BV1XRtKeqEo3/
         </div>
       </a>
 
@@ -320,15 +320,15 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h2 class="index-header">
         
-        <a href="/MCU/STM32/STM32F103C8T6-CAN-TJA1050/" target="_self">
-          STM32F103C8T6的CAN Bus通訊，使用TJA1050
+        <a href="/MCU/STM32/STM32F103C8T6-WithoutSTLink/" target="_self">
+          不使用ST Link，改用CH340，燒錄STM32韌體
         </a>
       </h2>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/MCU/STM32/STM32F103C8T6-CAN-TJA1050/" target="_self">
+      <a class="index-excerpt index-excerpt__noimg" href="/MCU/STM32/STM32F103C8T6-WithoutSTLink/" target="_self">
         <div>
-          為了方便做交叉測試和除錯，先使用比較熱門的STM32F103C8T6開發板來做CAN Bus 這幾天為了打通CAN Bus，花了我不少時間 STM32F103C8T6開發板的接線圖如下  參考的程式碼 29.CAN通信实验.rar 參考的影片網址https://www.bilibili.com/video/BV1XRtKeqEo3/
+          (Jan. 16th 2026) 早上工作在趕案子的時候，ST Link一直連不上開發板。 出現以下的錯誤畫面：  Can not connect to target!Please select “Connect Under Reset” mode from Target-&gt;Settings menuand try again.If you’re trying to connect to
         </div>
       </a>
 
@@ -404,7 +404,7 @@
   <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Suchen</h4>
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
         <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -412,7 +412,7 @@
       <div class="modal-body mx-3">
         <div class="md-form mb-5">
           <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v" for="local-search-input">Stichwort</label>
+          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
         </div>
         <div class="list-group" id="local-search-result"></div>
       </div>
@@ -497,7 +497,7 @@
   
 
   <noscript>
-    <div class="noscript-warning">Blog funktioniert am besten mit aktiviertem JavaScript</div>
+    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
   </noscript>
 </body>
 </html>
